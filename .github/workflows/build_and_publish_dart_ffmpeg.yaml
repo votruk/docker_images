@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
+      contents: read
+      repository-projects: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
